@@ -8,6 +8,8 @@ public class Usuario {
 	private String dni;
 	private String login;
 	private String password;
+	
+	
 	public int getIdUsuario() {
 		return idUsuario;
 	}
