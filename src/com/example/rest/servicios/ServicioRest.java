@@ -81,6 +81,19 @@ public class ServicioRest {
 		else
 			return Response.notModified().build();
 	}
+	
+	//Crud de Comprobante
+		
+		
+		@POST
+		@Path("/comprobante")
+		public Response registraComprobante(Usuario obj) {
+			log.info("Registra comprobante " + obj.getIdUsuario());
+			if (daoUser.insertaUsuario(obj) > 0)
+				return Response.ok().build();
+			else
+				return Response.notModified().build();
+		}
 		
 	
 		
